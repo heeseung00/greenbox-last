@@ -829,9 +829,9 @@ input:focus {
   transform: (20%, 0);
 }
 
-.test-btn a {
+/* .test-btn a {
   font-size: ;
-}
+} */
 
 .visual-box .inner a {
   display: flex;
