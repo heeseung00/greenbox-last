@@ -409,11 +409,12 @@ height: 63px; */
   align-items: center;
 }
 
-.header-mid-left a i {
+.header-mid-left a img {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 20px;
+  height: 20px;
 }
 
 .header-mid-right {
