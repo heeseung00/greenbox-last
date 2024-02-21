@@ -53,7 +53,7 @@ window.addEventListener("load", function () {
   });
 
   //===== nav 마우스 오버, 마우스아웃 효과
-  document.querySelector(".gnb").addEventListener("mouseover", function () {
+  document.querySelector(".gnb").addEventListener("mouseenter", function () {
     // 모든 .depth2-wrap을 보이게 함
     const depth2 = document.querySelectorAll(".depth2");
     const navBg = document.querySelector(".nav-bg");
@@ -62,7 +62,7 @@ window.addEventListener("load", function () {
     });
     navBg.style.display = "block";
   });
-  document.querySelector(".gnb").addEventListener("mouseout", function () {
+  document.querySelector(".gnb").addEventListener("mouseleave", function () {
     // 모든 .depth2-wrap을 감춤
     const depth2 = document.querySelectorAll(".depth2");
     const navBg = document.querySelector(".nav-bg");
@@ -167,9 +167,73 @@ window.addEventListener("load", function () {
       prevEl: ".sw-visual-prev",
     },
     centeredSlides: true, // 추가
-    slidesPerView: "auto", // 추가
+    // slidesPerView: "auto", // 추가
   });
 
+  // ====== test swiper적용
+  const testSwiper = new Swiper(".sw-test", {
+    loop: false,
+    // speed: 900,
+    // autoplay: {
+    //   delay: 2500,
+    //   disableOnInteraction: false,
+    // },
+    navigation: {
+      nextEl: ".sw-test-next",
+      prevEl: ".sw-test-prev",
+    },
+    disableOnInteraction: true,
+    breakpoints: {
+      // 720px 이하에서는 3개 보이기
+      760: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+      // 500px 이하에서는 2개 보이기
+      450: {
+        slidesPerView: 3.3,
+        spaceBetween: 15,
+      },
+      320: {
+        slidesPerView: 2.3,
+        spaceBetween: 10,
+      },
+    },
+  });
+
+  // ====== bset swiper적용
+  const bestSwiper = new Swiper(".sw-best", {
+    loop: false,
+    // speed: 900,
+    // autoplay: {
+    //   delay: 2500,
+    //   disableOnInteraction: false,
+    // },
+    navigation: {
+      nextEl: ".sw-best-next",
+      prevEl: ".sw-best-prev",
+    },
+
+    disableOnInteraction: true,
+    breakpoints: {
+      // 720px 이하에서는 3개 보이기
+      760: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+      // 500px 이하에서는 2개 보이기
+      450: {
+        slidesPerView: 3.3,
+        spaceBetween: 15,
+      },
+      320: {
+        slidesPerView: 2.3,
+        spaceBetween: 10,
+      },
+    },
+  });
+
+  
   // ======= review swiper적용
   const reviewSwiper = new Swiper(".review-inner", {
     
