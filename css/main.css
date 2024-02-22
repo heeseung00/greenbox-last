@@ -1085,8 +1085,8 @@ input:focus {
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding: 10px 0;
-  background-color: #f8f8f8;
+  padding: 60px 0;
+  background-color: #c7cdff29;
 }
 
 .test-slide {
@@ -1223,8 +1223,8 @@ input:focus {
 
 .item-title a {
   margin-top: 20px;
-  font-size: clamp(1rem, 1.167vw, 1.4rem);
-  font-weight: 500;
+  font-size: clamp(1.4rem, 1.0417vw, 1.5rem);
+  font-weight: 400;
   overflow: hidden;
   max-width: 380px;
   white-space: normal;
@@ -1237,29 +1237,28 @@ input:focus {
 
 .item-price {
   margin-top: 13px;
-  font-size: clamp(1rem, 1.667vw, 2rem);
-  font-weight: bold;
+  font-size: clamp(1.6rem, 1.667vw, 2rem);
+  font-weight: 700;
 }
 
 .item-price span:nth-child(1) {
-  color: red;
+  color: #2fb270;
 }
 
 .item-price span:nth-child(3) {
   font-size: clamp(1rem, 1.083vw, 1.3rem);
-  font-weight: 400;
   color: #9a9999;
   text-decoration: line-through;
 }
 
 .item-review {
-  font-size: clamp(1rem, 1.083vw, 1.5rem);
-  font-weight: 500;
+  font-size: clamp(1rem, 1.083vw, 1.3rem);
+  font-weight: 400;
   margin: 8px 9px 0 0;
 }
 
 .item-review span img {
-  width: clamp(10px, 1.083vw, 13px);
+  width: clamp(13px, 0.9722vw, 14px);
 }
 
 /* 베스트 */
@@ -1298,14 +1297,15 @@ input:focus {
   width: 100%;
   height: 100%;
 }
+.banner2{
+  display: none;
+}
 
 /* 골라담기 */
 
 .pick {
   position: relative;
   width: 100%;
-}
-.pick {
   margin: 100px 0 55px;
 }
 
@@ -1318,7 +1318,7 @@ h1 {
 
 .pick .item2 {
   display: flex;
-  gap: 28px;
+  gap: clamp(16px, 1.9444vw, 28px);
 }
 .pick .item2 > li {
   width: calc(100% / 2);
@@ -1360,27 +1360,31 @@ h1 {
 }
 .more-arrow {
   position: absolute;
-  top: 0;
+  display: flex;
+  align-items: center;
+  top: 5px;;
   right: 0;
   font-style: normal;
   transform: translateY(8px);
 }
 .more-arrow a {
+  float: left;
   position: relative;
+  left: -9px;
   padding: 0 15px 0 0;
-  color: #202020;
-  font-size: clamp(1.4rem, 1.25vw, 1.8rem);
+  color: #666666;
+  font-size: clamp(1.5rem, 1.2500vw, 1.8rem);
   font-weight: 500;
 }
 .more-arrow::after {
+  vertical-align: middle;
   display: inline-block;
-  position: absolute;
-  top: 5px;
-  right: 0;
+  position: relative;
+  left: -22px;
   width: clamp(7px, 0.5556vw, 8px);
   height: clamp(7px, 0.5556vw, 8px);
-  border-top: 1px solid #202020;
-  border-right: 1px solid #202020;
+  border-top: 1px solid #666666;
+  border-right: 1px solid #666666;
   transform: rotate(45deg);
   content: "";
 }
@@ -1413,6 +1417,7 @@ h1 {
   /* background-color: #f1d3d3; */
 }
 .review-inner .swiper-wrapper .swiper-slide a {
+  width: 100%;
   height: 100%;
   display: block;
   border: 1px solid #f0f0f0;

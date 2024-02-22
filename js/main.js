@@ -302,11 +302,19 @@ hamClose.addEventListener("click", () => {
     // },
     disableOnInteraction: true,
     breakpoints: {
-      slidesPerView: 1,
-      640: {
+      320: {
+        slidesPerView: 1,
+      },
+      440: {
+        slidesPerView: 1.5,
+      },
+      540: {
         slidesPerView: 2,
       },
-      1024: {
+      640:{
+        slidesPerView: 2.5
+      },
+      740: {
         slidesPerView: 3,
       },
     },
