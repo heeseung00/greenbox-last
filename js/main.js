@@ -33,36 +33,36 @@ window.addEventListener("load", function () {
     }
   });
 
-// //===== 햄버거 메뉴
-// let ham = document.querySelector(".ham-menu");
-// let btMenu = document.querySelector(".header-mid-left a");
-// let hamClose = document.querySelector(".ham-close");
+  // //===== 햄버거 메뉴
+  // let ham = document.querySelector(".ham-menu");
+  // let btMenu = document.querySelector(".header-mid-left a");
+  // let hamClose = document.querySelector(".ham-close");
 
-// btMenu.addEventListener("click", () => {
-//   ham.classList.add("nav-active");
-// });
+  // btMenu.addEventListener("click", () => {
+  //   ham.classList.add("nav-active");
+  // });
 
-// hamClose.addEventListener("click", () => {
-//   ham.classList.remove("nav-active");
-// });
+  // hamClose.addEventListener("click", () => {
+  //   ham.classList.remove("nav-active");
+  // });
 
-// // nav 영역에서 벗어나면 메뉴가 사라지는 기능
-// ham.addEventListener("mouseleave", () => {
-//   ham.classList.remove("nav-active");
-// });
+  // // nav 영역에서 벗어나면 메뉴가 사라지는 기능
+  // ham.addEventListener("mouseleave", () => {
+  //   ham.classList.remove("nav-active");
+  // });
 
-// 마우스 호버했을때
-let ham = document.querySelector(".ham-menu");
-let btMenu = document.querySelector(".header-mid-left a");
-let hamClose = document.querySelector(".ham-close");
+  // 마우스 호버했을때
+  let ham = document.querySelector(".ham-menu");
+  let btMenu = document.querySelector(".header-mid-left a");
+  let hamClose = document.querySelector(".ham-close");
 
-btMenu.addEventListener("click", () => {
-  ham.style.display = "block";
-});
+  btMenu.addEventListener("click", () => {
+    ham.style.display = "block";
+  });
 
-hamClose.addEventListener("click", () => {
-  ham.style.display = "none";
-});
+  hamClose.addEventListener("click", () => {
+    ham.style.display = "none";
+  });
 
   // ===== 스크롤 할 때, nav 상단 고정
   window.addEventListener("scroll", function () {
@@ -94,7 +94,7 @@ hamClose.addEventListener("click", () => {
       navBg.style.display = "block";
     }
   });
-  
+
   document.querySelector(".gnb").addEventListener("mouseleave", function () {
     if (window.innerWidth > 720) {
       // 브라우저 크기가 720 이상일 때만 실행
@@ -238,23 +238,44 @@ hamClose.addEventListener("click", () => {
       prevEl: ".sw-test-prev",
     },
     disableOnInteraction: true,
-    breakpoints: {
-      // 720px 이하에서는 3개 보이기
-      760: {
-        slidesPerView: 4,
-        spaceBetween: 20,
-      },
-      // 500px 이하에서는 2개 보이기
-      450: {
-        slidesPerView: 3.3,
-        spaceBetween: 15,
-      },
-      320: {
-        slidesPerView: 2.3,
-        spaceBetween: 10,
-      },
-    },
-  });
+      breakpoints: {
+        // 760이상 슬라이드 4개 보이기, 간격 20
+        760: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+        650: {
+          slidesPerView: 3.8,
+          spaceBetween: 15,
+        },
+        650: {
+          slidesPerView: 3.3,
+          spaceBetween: 14,
+        },
+        570: {
+          slidesPerView: 3.2,
+          spaceBetween: 12,
+        },
+        450: {
+          slidesPerView: 2.3,
+          spaceBetween: 12,
+        },
+        420: {
+          slidesPerView: 2.1,
+          spaceBetween: 12,
+        },
+  
+        380: {
+          slidesPerView: 1.9,
+          spaceBetween: 12,
+        },
+        320: {
+          slidesPerView: 1.3,
+          spaceBetween: 11,
+        },
+    }
+  }
+);
 
   // ====== bset swiper적용
   const bestSwiper = new Swiper(".sw-best", {
@@ -271,19 +292,39 @@ hamClose.addEventListener("click", () => {
 
     disableOnInteraction: true,
     breakpoints: {
-      // 720px 이하에서는 3개 보이기
+      // 760이상 슬라이드 4개 보이기, 간격 20
       760: {
         slidesPerView: 4,
         spaceBetween: 20,
       },
-      // 500px 이하에서는 2개 보이기
-      450: {
-        slidesPerView: 3.3,
+      650: {
+        slidesPerView: 3.8,
         spaceBetween: 15,
       },
-      320: {
+      650: {
+        slidesPerView: 3.3,
+        spaceBetween: 14,
+      },
+      570: {
+        slidesPerView: 3.2,
+        spaceBetween: 12,
+      },
+      450: {
         slidesPerView: 2.3,
-        spaceBetween: 10,
+        spaceBetween: 12,
+      },
+      420: {
+        slidesPerView: 2.1,
+        spaceBetween: 12,
+      },
+
+      380: {
+        slidesPerView: 1.9,
+        spaceBetween: 12,
+      },
+      320: {
+        slidesPerView: 1.3,
+        spaceBetween: 11,
       },
     },
   });
@@ -311,8 +352,8 @@ hamClose.addEventListener("click", () => {
       540: {
         slidesPerView: 2,
       },
-      640:{
-        slidesPerView: 2.5
+      640: {
+        slidesPerView: 2.5,
       },
       740: {
         slidesPerView: 3,
