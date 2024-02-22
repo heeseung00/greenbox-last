@@ -233,10 +233,8 @@ window.addEventListener("load", function () {
     },
   });
 
-  
   // ======= review swiper적용
   const reviewSwiper = new Swiper(".review-inner", {
-    
     // loop: true,
     // 슬라이드의 모션 속도를 transition 맞춘다.
     speed: 900,
@@ -249,11 +247,19 @@ window.addEventListener("load", function () {
     // },
     disableOnInteraction: true,
     breakpoints: {
-      slidesPerView: 1,
-      640: {
+      320: {
+        slidesPerView: 1,
+      },
+      440: {
+        slidesPerView: 1.5,
+      },
+      540: {
         slidesPerView: 2,
       },
-      1024: {
+      640:{
+        slidesPerView: 2.5
+      },
+      740: {
         slidesPerView: 3,
       },
     },
@@ -263,6 +269,7 @@ window.addEventListener("load", function () {
     },
     // centeredSlides: true, // 추가
     slidesPerView: "auto", // 추가
-  }
-);
+    
+  });
+  
 });

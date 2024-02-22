@@ -415,3 +415,15 @@
   padding-top: 10px;
 }
 }
+
+@media screen and (max-width: 490px){
+.cs-right {
+    width: 100%;
+padding-top: 10px;
+}
+.cs-right a {   
+ width: 100%;
+ padding: 0 0;
+text-align: center;
+}
+}
