@@ -282,7 +282,10 @@
     margin: 50px 35px;
   }
   .review {
-    margin: 41px 0 10px;
+    margin: 58px 0 51px;
+  }
+  .banner-wrap {
+    margin-bottom: 48px;
   }
 }
 
@@ -474,6 +477,7 @@
   }
   .section-title {
     justify-content: flex-start;
+    margin-left: 0;
   }
 }
 

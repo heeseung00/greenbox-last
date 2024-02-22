@@ -1290,7 +1290,7 @@ input:focus {
 /* 배너 */
 .banner-wrap {
   position: relative;
-  margin-bottom: 89px;
+    margin-bottom: 128px;
 }
 .banner-wrap img {
   position: relative;
@@ -1351,7 +1351,7 @@ h1 {
 }
 /* 리뷰 */
 .review {
-  margin: 100px 0 55px;
+    margin: 117px 0 97px
 }
 .review-inner {
   overflow: hidden;
@@ -1390,7 +1390,7 @@ h1 {
 }
 /* swiper */
 .review-inner .swiper-wrapper {
-  padding: 20px 0;
+  padding: -15px 0;
 }
 .swiper-wrapper {
   position: relative;
