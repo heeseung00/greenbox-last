@@ -33,6 +33,37 @@ window.addEventListener("load", function () {
     }
   });
 
+// //===== 햄버거 메뉴
+// let ham = document.querySelector(".ham-menu");
+// let btMenu = document.querySelector(".header-mid-left a");
+// let hamClose = document.querySelector(".ham-close");
+
+// btMenu.addEventListener("click", () => {
+//   ham.classList.add("nav-active");
+// });
+
+// hamClose.addEventListener("click", () => {
+//   ham.classList.remove("nav-active");
+// });
+
+// // nav 영역에서 벗어나면 메뉴가 사라지는 기능
+// ham.addEventListener("mouseleave", () => {
+//   ham.classList.remove("nav-active");
+// });
+
+// 마우스 호버했을때
+let ham = document.querySelector(".ham-menu");
+let btMenu = document.querySelector(".header-mid-left a");
+let hamClose = document.querySelector(".ham-close");
+
+btMenu.addEventListener("click", () => {
+  ham.style.display = "block";
+});
+
+hamClose.addEventListener("click", () => {
+  ham.style.display = "none";
+});
+
   // ===== 스크롤 할 때, nav 상단 고정
   window.addEventListener("scroll", function () {
     var nav = document.querySelector(".nav");
@@ -50,6 +81,30 @@ window.addEventListener("load", function () {
       inner.classList.remove("scrolled"); // 클래스 제거
     }
     inner.classList.add("inner"); // .inner 클래스 추가
+  });
+
+  document.querySelector(".gnb").addEventListener("mouseenter", function () {
+    if (window.innerWidth > 720) {
+      // 브라우저 크기가 720 이상일 때만 실행
+      const depth2 = document.querySelectorAll(".depth2");
+      const navBg = document.querySelector(".nav-bg");
+      depth2.forEach(function (depth2) {
+        depth2.style.display = "block";
+      });
+      navBg.style.display = "block";
+    }
+  });
+  
+  document.querySelector(".gnb").addEventListener("mouseleave", function () {
+    if (window.innerWidth > 720) {
+      // 브라우저 크기가 720 이상일 때만 실행
+      const depth2 = document.querySelectorAll(".depth2");
+      const navBg = document.querySelector(".nav-bg");
+      depth2.forEach(function (depth2) {
+        depth2.style.display = "none";
+      });
+      navBg.style.display = "none";
+    }
   });
 
   //===== nav 마우스 오버, 마우스아웃 효과
@@ -233,10 +288,8 @@ window.addEventListener("load", function () {
     },
   });
 
-  
   // ======= review swiper적용
   const reviewSwiper = new Swiper(".review-inner", {
-    
     // loop: true,
     // 슬라이드의 모션 속도를 transition 맞춘다.
     speed: 900,
@@ -263,6 +316,5 @@ window.addEventListener("load", function () {
     },
     // centeredSlides: true, // 추가
     slidesPerView: "auto", // 추가
-  }
-);
+  });
 });
