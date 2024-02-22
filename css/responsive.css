@@ -8,6 +8,7 @@
   }
 }
 
+/* === hee ===*/
 @media screen and (min-width: 761px) {
   .ham-menu {
     display: none;
@@ -66,7 +67,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 30px 0;
+    margin: 30px 0 15px;
   }
 
   .header .logo {
@@ -184,20 +185,26 @@
     height: 92.1053vw;
   }
 
+  .visual-box .inner {
+    position: relative;
+    top: 0;
+  }
+
   .visual-box .inner h2 {
+    width: 100%;
     position: absolute;
     top: 34%;
-    left: 35%;
+    left: 55%;
     transform: translate(-50%, -50%);
     /* font-size: 55px; */
     font-size: clamp(35px, 7.2368vw, 55px);
   }
 
   .visual-box .inner h2.visual-text-1 {
-    position: absolute;
+    /* position: absolute;
     top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
     font-size: clamp(20px, 7.2368vw, 55px);
   }
 
@@ -212,9 +219,10 @@
   }
 
   .visual-box .inner p {
+    width: 100%;
     position: absolute;
-    left: 35%;
-    top: 56%;
+    left: 55%;
+    top: 57%;
     transform: translate(-50%, -50%);
     font-size: clamp(13px, 2.5vw, 19px);
     font-weight: 500;
@@ -251,12 +259,12 @@
   }
 
   .category a:nth-child(4) {
-    width: 15.98%;
+    width: 14.28%;
   }
 
   .category a p {
     text-align: center;
-    font-size: clamp(1rem, 2.2368vw, 1.7rem);
+    font-size: clamp(1.4rem, 2.2368vw, 1.7rem);
     /* font-size: 1.7rem; */
     /* font-weight: bold; */
     font-weight: 400;
@@ -295,12 +303,47 @@
   }
 }
 
+@media screen and (max-width: 455px) {
+  .visual-box .inner p {
+    top: 57%;
+  }
+}
+
 @media screen and (max-width: 440px) {
   .category {
     position: relative;
     width: 100%;
-    /* margin: 50px 0 35px; */
     margin: 2%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .visual-box .inner p {
+    top: 57%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .visual-box .inner p {
+    top: 60.5%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .visual-box .inner p {
+    top: 61.5%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .visual-box .inner p {
+    top: 62.5%;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .visual-box .inner p {
+    top: 63.5%;
   }
 }
 

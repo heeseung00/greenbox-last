@@ -33,36 +33,36 @@ window.addEventListener("load", function () {
     }
   });
 
-// //===== 햄버거 메뉴
-// let ham = document.querySelector(".ham-menu");
-// let btMenu = document.querySelector(".header-mid-left a");
-// let hamClose = document.querySelector(".ham-close");
+  // //===== 햄버거 메뉴
+  // let ham = document.querySelector(".ham-menu");
+  // let btMenu = document.querySelector(".header-mid-left a");
+  // let hamClose = document.querySelector(".ham-close");
 
-// btMenu.addEventListener("click", () => {
-//   ham.classList.add("nav-active");
-// });
+  // btMenu.addEventListener("click", () => {
+  //   ham.classList.add("nav-active");
+  // });
 
-// hamClose.addEventListener("click", () => {
-//   ham.classList.remove("nav-active");
-// });
+  // hamClose.addEventListener("click", () => {
+  //   ham.classList.remove("nav-active");
+  // });
 
-// // nav 영역에서 벗어나면 메뉴가 사라지는 기능
-// ham.addEventListener("mouseleave", () => {
-//   ham.classList.remove("nav-active");
-// });
+  // // nav 영역에서 벗어나면 메뉴가 사라지는 기능
+  // ham.addEventListener("mouseleave", () => {
+  //   ham.classList.remove("nav-active");
+  // });
 
-// 마우스 호버했을때
-let ham = document.querySelector(".ham-menu");
-let btMenu = document.querySelector(".header-mid-left a");
-let hamClose = document.querySelector(".ham-close");
+  // 마우스 호버했을때
+  let ham = document.querySelector(".ham-menu");
+  let btMenu = document.querySelector(".header-mid-left a");
+  let hamClose = document.querySelector(".ham-close");
 
-btMenu.addEventListener("click", () => {
-  ham.style.display = "block";
-});
+  btMenu.addEventListener("click", () => {
+    ham.style.display = "block";
+  });
 
-hamClose.addEventListener("click", () => {
-  ham.style.display = "none";
-});
+  hamClose.addEventListener("click", () => {
+    ham.style.display = "none";
+  });
 
   // ===== 스크롤 할 때, nav 상단 고정
   window.addEventListener("scroll", function () {
@@ -94,7 +94,7 @@ hamClose.addEventListener("click", () => {
       navBg.style.display = "block";
     }
   });
-  
+
   document.querySelector(".gnb").addEventListener("mouseleave", function () {
     if (window.innerWidth > 720) {
       // 브라우저 크기가 720 이상일 때만 실행
@@ -205,25 +205,25 @@ hamClose.addEventListener("click", () => {
     controlScroll(false);
   });
 
-  // ====== visual swiper적용
-  const swiper = new Swiper(".sw-visual", {
-    loop: true,
-    // 슬라이드의 모션 속도를 transition 맞춘다.
-    speed: 900,
-    autoplay: {
-      delay: 2500,
-      // 사용자가 마우스 클릭 드래그로 이동하면
-      // 아래 구문이 없으면 autoplya 가 해제되므로
-      // 이것을 방지해 주기위한 처리
-      disableOnInteraction: false,
-    },
-    navigation: {
-      nextEl: ".sw-visual-next",
-      prevEl: ".sw-visual-prev",
-    },
-    centeredSlides: true, // 추가
-    // slidesPerView: "auto", // 추가
-  });
+  // // ====== visual swiper적용
+  // const swiper = new Swiper(".sw-visual", {
+  //   loop: true,
+  //   // 슬라이드의 모션 속도를 transition 맞춘다.
+  //   speed: 900,
+  //   autoplay: {
+  //     delay: 2500,
+  //     // 사용자가 마우스 클릭 드래그로 이동하면
+  //     // 아래 구문이 없으면 autoplya 가 해제되므로
+  //     // 이것을 방지해 주기위한 처리
+  //     disableOnInteraction: false,
+  //   },
+  //   navigation: {
+  //     nextEl: ".sw-visual-next",
+  //     prevEl: ".sw-visual-prev",
+  //   },
+  //   centeredSlides: true, // 추가
+  //   // slidesPerView: "auto", // 추가
+  // });
 
   // ====== test swiper적용
   const testSwiper = new Swiper(".sw-test", {
@@ -311,8 +311,8 @@ hamClose.addEventListener("click", () => {
       540: {
         slidesPerView: 2,
       },
-      640:{
-        slidesPerView: 2.5
+      640: {
+        slidesPerView: 2.5,
       },
       740: {
         slidesPerView: 3,
