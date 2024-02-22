@@ -48,7 +48,6 @@
     margin: 30px 0;
   }
 
-
   .header .logo {
     position: relative;
     right: 15px;
@@ -115,7 +114,6 @@
     flex-direction: column;
   }
 
-
   /* 비주얼  */
   .visual-bg-1 {
     background: url("../images/미압축/visual-img-horiz-1.png") no-repeat center;
@@ -148,8 +146,6 @@
     width: 100%;
     height: 92.1053vw;
   }
-  
-
 
   .visual-box .inner h2 {
     position: absolute;
@@ -243,6 +239,13 @@
   /* 베스트 */
   .best {
     margin: 45px 0 45px;
+  }
+  /* 골라담기 */
+  .pick {
+    margin: 50px 35px;
+  }
+  .review {
+    margin: 41px 0 10px;
   }
 }
 
@@ -374,16 +377,16 @@
     flex-direction: column-reverse;
   }
   .link-left {
-    display: flex; 
+    display: flex;
     justify-content: space-evenly;
   }
   .link-left > li {
     padding: 0px 0px 0 0;
-}
-.link-left > li {
-  padding: 0 0 0 0;
-}
-  .link-right{
+  }
+  .link-left > li {
+    padding: 0 0 0 0;
+  }
+  .link-right {
     justify-content: center;
   }
   .link-right > li {
@@ -392,38 +395,61 @@
   .ft-down2-wrap {
     justify-content: center;
   }
-   .company {
-  text-align: center;
+  .company {
+    text-align: center;
   }
- .ft-logo {
-    display: none; 
+  .ft-logo {
+    display: none;
   }
 
-/* 하단 간격 조정 */
+  /* 하단 간격 조정 */
 
   .link-right {
     padding: 24px 0 0;
-}
-.link-left {
-  display: flex;
-  padding: 20px 0 15px;
-}
-.ft-down2 {
-  padding: 15px 0 30px;
-}
-.company > p {
-  padding-top: 10px;
-}
+  }
+  .link-left {
+    display: flex;
+    padding: 20px 0 15px;
+  }
+  .ft-down2 {
+    padding: 15px 0 30px;
+  }
+  .company > p {
+    padding-top: 10px;
+  }
 }
 
-@media screen and (max-width: 490px){
-.cs-right {
+@media screen and (max-width: 490px) {
+  .banner1 {
+    display: none;
+  }
+  .banner2 {
+    display: block;
+  }
+  .cs-right {
     width: 100%;
-padding-top: 10px;
+    padding-top: 10px;
+  }
+  .cs-right a {
+    width: 100%;
+    padding: 0 0;
+    text-align: center;
+  }
+  .section-title {
+    justify-content: flex-start;
+  }
 }
-.cs-right a {   
- width: 100%;
- padding: 0 0;
-text-align: center;
+
+@media screen and (max-width: 450px) {
+  .item-price {
+    margin-top: 10px;
+  }
 }
+@media screen and (max-width: 400px) {
+  .pick .item2 {
+    flex-direction: column;
+  }
+  .pick .item2 > li {
+    width: 100%;
+  }
 }
