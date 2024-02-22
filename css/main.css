@@ -255,7 +255,7 @@ body {
   border-radius: 9px;
   position: absolute;
   bottom: 0px;
-  left: -320px;
+  right: 150%;
   padding: 16px;
   /* position:absolute 적용시 z-index도 같이 적용된다. */
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 2px inset,
@@ -308,6 +308,7 @@ body {
 
 .chat-text {
   font-size: 1.5rem;
+  font-size: clamp(1.3rem, 1.0417vw, 1.5rem);
   /* white-space: wrap; */
   /* min-width: 700px;
   white-space: normal;
@@ -333,6 +334,7 @@ body {
   border: none;
   padding: 10px 20px;
   font-size: 1.7rem;
+  font-size: clamp(1.5rem, 1.1806vw, 1.7rem);
   font-weight: 600;
   color: #fff;
   /* color: #333; */
@@ -946,6 +948,7 @@ input:focus {
 }
 
 .visual-box .inner h2 {
+  width: 100%;
   position: absolute;
   bottom: 35%;
   transform: (35%, 0);
@@ -1297,7 +1300,7 @@ input:focus {
   width: 100%;
   height: 100%;
 }
-.banner2{
+.banner2 {
   display: none;
 }
 
@@ -1362,7 +1365,7 @@ h1 {
   position: absolute;
   display: flex;
   align-items: center;
-  top: 5px;;
+  top: 5px;
   right: 0;
   font-style: normal;
   transform: translateY(8px);
@@ -1373,7 +1376,7 @@ h1 {
   left: -9px;
   padding: 0 15px 0 0;
   color: #666666;
-  font-size: clamp(1.5rem, 1.2500vw, 1.8rem);
+  font-size: clamp(1.5rem, 1.25vw, 1.8rem);
   font-weight: 500;
 }
 .more-arrow::after {
