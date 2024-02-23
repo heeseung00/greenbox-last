@@ -205,25 +205,25 @@ window.addEventListener("load", function () {
     controlScroll(false);
   });
 
-  // // ====== visual swiper적용
-  // const swiper = new Swiper(".sw-visual", {
-  //   loop: true,
-  //   // 슬라이드의 모션 속도를 transition 맞춘다.
-  //   speed: 900,
-  //   autoplay: {
-  //     delay: 2500,
-  //     // 사용자가 마우스 클릭 드래그로 이동하면
-  //     // 아래 구문이 없으면 autoplya 가 해제되므로
-  //     // 이것을 방지해 주기위한 처리
-  //     disableOnInteraction: false,
-  //   },
-  //   navigation: {
-  //     nextEl: ".sw-visual-next",
-  //     prevEl: ".sw-visual-prev",
-  //   },
-  //   centeredSlides: true, // 추가
-  //   // slidesPerView: "auto", // 추가
-  // });
+  // ====== visual swiper적용
+  const swiper = new Swiper(".sw-visual", {
+    loop: true,
+    // 슬라이드의 모션 속도를 transition 맞춘다.
+    speed: 900,
+    autoplay: {
+      delay: 2500,
+      // 사용자가 마우스 클릭 드래그로 이동하면
+      // 아래 구문이 없으면 autoplya 가 해제되므로
+      // 이것을 방지해 주기위한 처리
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".sw-visual-next",
+      prevEl: ".sw-visual-prev",
+    },
+    centeredSlides: true, // 추가
+    // slidesPerView: "auto", // 추가
+  });
 
   // ====== test swiper적용
   const testSwiper = new Swiper(".sw-test", {
@@ -238,44 +238,43 @@ window.addEventListener("load", function () {
       prevEl: ".sw-test-prev",
     },
     disableOnInteraction: true,
-      breakpoints: {
-        // 760이상 슬라이드 4개 보이기, 간격 20
-        760: {
-          slidesPerView: 4,
-          spaceBetween: 20,
-        },
-        650: {
-          slidesPerView: 3.8,
-          spaceBetween: 15,
-        },
-        650: {
-          slidesPerView: 3.3,
-          spaceBetween: 14,
-        },
-        570: {
-          slidesPerView: 3.2,
-          spaceBetween: 12,
-        },
-        450: {
-          slidesPerView: 2.3,
-          spaceBetween: 12,
-        },
-        420: {
-          slidesPerView: 2.1,
-          spaceBetween: 12,
-        },
-  
-        380: {
-          slidesPerView: 1.9,
-          spaceBetween: 12,
-        },
-        320: {
-          slidesPerView: 1.3,
-          spaceBetween: 11,
-        },
-    }
-  }
-);
+    breakpoints: {
+      // 760이상 슬라이드 4개 보이기, 간격 20
+      760: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+      650: {
+        slidesPerView: 3.8,
+        spaceBetween: 15,
+      },
+      650: {
+        slidesPerView: 3.3,
+        spaceBetween: 14,
+      },
+      570: {
+        slidesPerView: 3.2,
+        spaceBetween: 12,
+      },
+      450: {
+        slidesPerView: 2.3,
+        spaceBetween: 12,
+      },
+      420: {
+        slidesPerView: 2.1,
+        spaceBetween: 12,
+      },
+
+      380: {
+        slidesPerView: 1.9,
+        spaceBetween: 12,
+      },
+      320: {
+        slidesPerView: 1.3,
+        spaceBetween: 11,
+      },
+    },
+  });
 
   // ====== bset swiper적용
   const bestSwiper = new Swiper(".sw-best", {
