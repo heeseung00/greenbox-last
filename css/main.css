@@ -840,11 +840,13 @@ input:focus {
   z-index: 999;
   top: 45%;
   left: 5%;
-  background: url(../images/banner_slide_right_btn.png) no-repeat center;
+  /* background: url(../images/banner_slide_right_btn.png) no-repeat center; */
+  /* background: url(../images/미압축/review-arrow-left.svg) no-repeat center; */
+  background: url("../images/미압축/review_button_left.png") no-repeat center;
   width: 52px;
   height: 52px;
   border: none;
-  transform: rotate(180deg);
+  /* transform: rotate(180deg); */
   cursor: pointer;
   opacity: 0;
   transition: all 0.5s ease 0s;
@@ -855,7 +857,9 @@ input:focus {
   z-index: 999;
   top: 45%;
   right: 5%;
-  background: url(../images/banner_slide_right_btn.png) no-repeat 50% 50%;
+  /* background: url(../images/banner_slide_right_btn.png) no-repeat 50% 50%; */
+  /* background: url(../images/미압축/review-arrow-right.svg) no-repeat 50% 50%; */
+  background: url("../images/미압축/review_button_right.png") no-repeat center;
   width: 52px;
   height: 52px;
   border: none;
@@ -1293,7 +1297,7 @@ input:focus {
 /* 배너 */
 .banner-wrap {
   position: relative;
-    margin-bottom: 128px;
+  margin-bottom: 128px;
 }
 .banner-wrap img {
   position: relative;
@@ -1354,7 +1358,7 @@ h1 {
 }
 /* 리뷰 */
 .review {
-    margin: 117px 0 97px
+  margin: 117px 0 97px;
 }
 .review-inner {
   overflow: hidden;
