@@ -842,7 +842,7 @@ input:focus {
   left: 5%;
   /* background: url(../images/banner_slide_right_btn.png) no-repeat center; */
   /* background: url(../images/미압축/review-arrow-left.svg) no-repeat center; */
-  background: url("../images/미압축/review_button_left.png") no-repeat center;
+  background: url("../images/미압축/visual_button_left_w.png") no-repeat center;
   width: 52px;
   height: 52px;
   border: none;
@@ -859,7 +859,7 @@ input:focus {
   right: 5%;
   /* background: url(../images/banner_slide_right_btn.png) no-repeat 50% 50%; */
   /* background: url(../images/미압축/review-arrow-right.svg) no-repeat 50% 50%; */
-  background: url("../images/미압축/review_button_right.png") no-repeat center;
+  background: url("../images/미압축/visual_button_right_w.png") no-repeat center;
   width: 52px;
   height: 52px;
   border: none;
